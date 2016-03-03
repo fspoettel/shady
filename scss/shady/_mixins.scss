@@ -7,10 +7,9 @@
 
 /// Apply a vignette
 /// @param {String} $preset ["default"] - Apply a preset from $shady-presets or "custom"
-/// @param {String} $contentSelector ["> img"] - Selector of the container-content
 /// @output Outputs a specific vignette inside a selector
 
-@mixin shady($preset: $shady-default-preset, $contentSelector: $shady-default-selector) {
+@mixin shady($preset: $shady-default-preset) {
   position: relative;
 
   &::before {
@@ -30,8 +29,18 @@
       pointer-events: none;
     }
   }
+}
 
-  #{$contentSelector} {
-    display: block;
+/// Expose all presets as classes
+/// @param {String} $prefix [".shady--"] - Prefix for classes
+/// @output Outputs classes for each preset
+
+@mixin shady-expose($prefix: ".shady--") {
+  @each $preset in $shady-presets {
+    $key: nth($preset, 1);
+
+    #{$prefix}#{$key} {
+      @include shady($key);
+    }
   }
 }

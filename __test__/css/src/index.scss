@@ -1,11 +1,6 @@
 @import "./_sanitize";
 @import "../../../scss/_shady";
 
-figure {
-  margin: 0 0 1.5rem 0;
-  padding: 0;
-}
-
 audio,
 iframe,
 img,
@@ -15,12 +10,7 @@ video {
   height: auto;
 }
 
-.shady img {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  object-position: center;
-}
+.shady img {}
 
 .shady-caption {
   position: absolute;
@@ -60,8 +50,4 @@ video {
 
 .shady--top {
   @include shady("top");
-}
-
-.shady--bottomTop {
-  @include shady("full");
 }

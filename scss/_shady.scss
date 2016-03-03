@@ -5,25 +5,36 @@
 /// @author Felix Spöttel
 ////
 
-@import "./shady/_presets";
 @import "./shady/_functions";
 @import "./shady/_mixins";
+
+/// Color used in the default presets
+/// @property {String}
+$shady-preset-color: #000f14;
+
+@import "./shady/_presets";
 
 /// Available presets
 /// @property {Map}
 
 $shady-presets:
   (
-    "bottom": $shady-bottom,
-    "bottomTop": $shady-bottomTop,
-    "full": $shady-full,
-    "top": $shady-top,
+    "bottom": $shady-preset-bottom,
+    "bottomTop": $shady-preset-bottomTop,
+    "full": $shady-preset-full,
+    "top": $shady-preset-top,
   );
 
 /// Default preset
 /// @property {String}
 $shady-default-preset: "bottom";
 
-/// Default selector for vignette-content
-/// @property {String}
-$shady-default-selector: "> img";
+/// Shady can expose each preset as a class
+/// By default, the class will be named: .shady--{preset}
+/// @property {Boolean}
+$shady-expose: false;
+
+// Expose classes.
+@if ($shady-expose == true) {
+  @include shady-expose;
+}
