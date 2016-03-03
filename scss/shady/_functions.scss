@@ -1,0 +1,22 @@
+////
+/// SHADY FUNCTIONS
+/// MIT-License © 2016
+/// @group Functions
+/// @author Felix Spöttel
+////
+
+/// Get Presets
+/// @returns {String} - Outputs a gradient if it exists
+@function shady-get-preset($name) {
+  @if ($name == "default") {
+    @return map-get($shady-presets, $shady-default-preset);
+  }
+
+  @elseif map-has-key($shady-presets, $name) {
+    @return map-get($shady-presets, $name);
+  }
+
+  @else {
+    @error "The preset #{$name} does not exist in $shady-presets.";
+  }
+}

@@ -1,0 +1,29 @@
+////
+/// SHADY v0.1.0
+/// MIT-License © 2016
+/// @group Config
+/// @author Felix Spöttel
+////
+
+@import "./shady/_presets";
+@import "./shady/_functions";
+@import "./shady/_mixins";
+
+/// Available presets
+/// @property {Map}
+
+$shady-presets:
+  (
+    "bottom": $shady-bottom,
+    "bottomTop": $shady-bottomTop,
+    "full": $shady-full,
+    "top": $shady-top,
+  );
+
+/// Default preset
+/// @property {String}
+$shady-default-preset: "bottom";
+
+/// Default selector for vignette-content
+/// @property {String}
+$shady-default-selector: "> img";

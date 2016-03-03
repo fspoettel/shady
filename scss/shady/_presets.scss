@@ -1,0 +1,35 @@
+////
+/// SHADY PRESETS
+/// MIT-License © 2016
+/// @group Presets
+/// @author Felix Spöttel
+////
+
+$gradient-color: #000f14;
+
+$shady-bottom:
+  linear-gradient(
+    to top,
+    rgba($gradient-color, 0.6) 15%,
+    rgba($gradient-color, 0.15) 52%,
+    rgba($gradient-color, 0) 70%
+  );
+
+$shady-top:
+  linear-gradient(
+    to bottom,
+    rgba($gradient-color, 0.6) 15%,
+    rgba($gradient-color, 0.15) 52%,
+    rgba($gradient-color, 0) 70%
+  );
+
+$shady-bottomTop:
+  linear-gradient(
+    to top,
+    rgba($gradient-color, 0.6) 15%,
+    rgba($gradient-color, 0.15) 52%,
+    rgba($gradient-color, 0.6) 85%,
+    rgba($gradient-color, 0.6) 100%
+  );
+
+$shady-full: rgba($gradient-color, 0.6);

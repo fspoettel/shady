@@ -1,0 +1,37 @@
+////
+/// SHADY MIXINS
+/// MIT-License © 2016
+/// @group Mixins
+/// @author Felix Spöttel
+////
+
+/// Apply a vignette
+/// @param {String} $preset ["default"] - Apply a preset from $shady-presets or "custom"
+/// @param {String} $contentSelector ["> img"] - Selector of the container-content
+/// @output Outputs a specific vignette inside a selector
+
+@mixin shady($preset: $shady-default-preset, $contentSelector: $shady-default-selector) {
+  position: relative;
+
+  &::before {
+    @if ($preset == "custom") {
+      @content;
+    }
+
+    @else {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      height: 100%;
+      background: shady-get-preset($preset);
+      content: "";
+      pointer-events: none;
+    }
+  }
+
+  #{$contentSelector} {
+    display: block;
+  }
+}
