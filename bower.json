@@ -1,0 +1,23 @@
+{
+  "name": "shady",
+  "version": "0.1.0",
+  "description": "Configurable vignettes as scss mixins",
+  "main": "scss/_shady.scss",
+  "authors": [
+    "Felix Spöttel"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "vignette",
+    "sass",
+    "scss"
+  ],
+  "moduleType": [],
+  "homepage": "https://github.com/fspoettel/shady",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "__test__"
+  ]
+}

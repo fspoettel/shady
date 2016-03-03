@@ -1,0 +1,4 @@
+node_modules/**
+sassdoc/**
+
+__test__/css/index.css

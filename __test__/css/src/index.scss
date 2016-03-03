@@ -1,0 +1,67 @@
+@import "./_sanitize";
+@import "../../../scss/_shady";
+
+figure {
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+}
+
+audio,
+iframe,
+img,
+object,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.shady img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.shady-caption {
+  position: absolute;
+  z-index: 3;
+  color: #fff;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.shady-caption--bottom {
+  left: 1.5rem;
+  bottom: 1.5rem;
+}
+
+.shady-caption--top {
+  left: 1.5rem;
+  top: 1.5rem;
+}
+
+.shady-caption--center {
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.shady--bottom {
+  @include shady("bottom");
+}
+
+.shady--bottomTop {
+  @include shady("bottomTop");
+}
+
+.shady--full {
+  @include shady("full");
+}
+
+.shady--top {
+  @include shady("top");
+}
+
+.shady--bottomTop {
+  @include shady("full");
+}
