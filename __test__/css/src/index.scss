@@ -51,3 +51,16 @@ video {
 .shady--top {
   @include shady("top");
 }
+
+.shady--custom {
+  @include shady("custom") {
+    background: linear-gradient(to top, rgba(red, 0.5) 0%, rgba(green, 0.5) 100%);
+  };
+}
+
+.shady--customProp {
+  @include shady("full") {
+    opacity: 0.1;
+    mix-blend-mode: color-burn;
+  };
+}

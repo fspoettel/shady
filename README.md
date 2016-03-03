@@ -47,11 +47,17 @@ Shady is intended to be used as a semantic mixin on media containers. It works b
 }
 
 // Custom vignette
-// You can apply custom vignettes that are not defined in a preset by using a content-block
-
+// You can apply custom vignettes that are not defined in a preset by using @content and passing "custom" to the mixin
 .vignette-container {
   @include shady("custom") {
     background: linear-gradient(from top, red 0%, green 100%);
+  }
+
+// Custom properties
+// You can apply other css-value to the vignette directly by passing them as @content
+.vignette-container {
+  @include shady("bottom") {
+    mix-blend-mode: multiply;
   }
 }
 ```
