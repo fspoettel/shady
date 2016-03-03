@@ -1,5 +1,5 @@
 {
-  "name": "shady",
+  "name": "sass-shady",
   "version": "0.1.0",
   "description": "Configurable vignettes as scss mixins",
   "main": "scss/_shady.scss",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fspoettel/vignettes.scss.git"
+    "url": "git+https://github.com/fspoettel/shady.git"
   },
   "keywords": [
     "vignette",
@@ -18,9 +18,9 @@
   "author": "Felix Spöttel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fspoettel/vignettes.scss/issues"
+    "url": "https://github.com/fspoettel/shady/issues"
   },
-  "homepage": "https://github.com/fspoettel/vignettes.scss#readme",
+  "homepage": "https://github.com/fspoettel/shady#readme",
   "devDependencies": {
     "autoprefixer": "^6.3.3",
     "del": "^2.2.0",
