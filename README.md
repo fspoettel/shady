@@ -1,13 +1,13 @@
 # Shady
 
-> Easy vignettes for your images
+> :waxing_crescent_moon: Customizable vignettes for your images
 
- 1. [Install](https://github.com/felics/shady#install)
- 2. [Usage](https://github.com/felics/shady#usage)
-   1. [Mixin](https://github.com/felics/shady#mixin)
-   2. [Options](https://github.com/felics/shady#options)
-   3. [Presets](https://github.com/felics/shady#presets)
- 3. [Build](https://github.com/felics/shady#build)
+ 1. [Install](https://github.com/fspoettel/shady#install)
+ 2. [Usage](https://github.com/fspoettel/shady#usage)
+   1. [Mixin](https://github.com/fspoettel/shady#mixin)
+   2. [Options](https://github.com/fspoettel/shady#options)
+   3. [Presets](https://github.com/fspoettel/shady#presets)
+ 3. [Build](https://github.com/fspoettel/shady#build)
 
 ## Install
 
